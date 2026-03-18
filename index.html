@@ -1,30 +1,45 @@
 <!DOCTYPE html><html lang="pt-BR" translate="no"><head><script>
-// Silently swallow unhandled promise rejections from XQuiz tracking/fetch calls
-// so React's error boundary never sees them and the quiz keeps working normally.
-window.addEventListener('unhandledrejection', function(event) {
-  var reason = event.reason;
-  var msg = reason && (reason.message || String(reason));
-  if (!msg) { event.preventDefault(); return; }
-  if (
-    msg.indexOf('fetch') !== -1 ||
-    msg.indexOf('Failed to fetch') !== -1 ||
-    msg.indexOf('NetworkError') !== -1 ||
-    msg.indexOf('xquiz') !== -1 ||
-    msg.indexOf('ingest') !== -1 ||
-    msg.indexOf('localhost:3001') !== -1
-  ) {
-    event.preventDefault();
-  }
-});
-window.addEventListener('error', function(event) {
-  var msg = event.message || '';
-  if (
-    msg.indexOf('ChunkLoadError') !== -1 ||
-    msg.indexOf('Loading chunk') !== -1
-  ) {
-    event.preventDefault();
-  }
-}, true);
+// === INTERCEPTOR DE REDE ===
+// Substitui window.fetch para capturar TODAS as chamadas de tracking do XQuiz
+// e retornar uma resposta 200 fake, impedindo qualquer erro de rede de chegar ao React.
+(function() {
+  var _fetch = window.fetch;
+  var BLOCKED = [
+    'ingest.xquiz.com.br',
+    'localhost:3001',
+    'api.ipify.org',
+    'api6.ipify.org',
+    'tracking/session',
+    'tracking/v1/events'
+  ];
+  window.fetch = function(url) {
+    var u = String(url || '');
+    for (var i = 0; i < BLOCKED.length; i++) {
+      if (u.indexOf(BLOCKED[i]) !== -1) {
+        return Promise.resolve(new Response('{}', { status: 200, headers: { 'Content-Type': 'application/json' } }));
+      }
+    }
+    return _fetch.apply(this, arguments);
+  };
+
+  // Also swallow all unhandled rejections and chunk errors as fallback
+  window.addEventListener('unhandledrejection', function(event) {
+    var reason = event.reason;
+    var msg = reason && (reason.message || String(reason));
+    if (!msg || msg.indexOf('fetch') !== -1 || msg.indexOf('Failed') !== -1 ||
+        msg.indexOf('NetworkError') !== -1 || msg.indexOf('xquiz') !== -1 ||
+        msg.indexOf('ingest') !== -1 || msg.indexOf('ChunkLoadError') !== -1 ||
+        msg.indexOf('Loading chunk') !== -1) {
+      event.preventDefault();
+    }
+  });
+  window.addEventListener('error', function(event) {
+    var msg = event.message || '';
+    if (msg.indexOf('ChunkLoadError') !== -1 || msg.indexOf('Loading chunk') !== -1) {
+      event.preventDefault();
+    }
+  }, true);
+})();
 </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="css/b13a656e3c0abc33.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-6cb5a853f7b65abb.js?dpl=dpl_7Euffagr6AeeijA3Xkz5Wb6YiHHq"><script src="js/71a992c3-ea8b8915255b6f54.js" async=""></script><script src="js/45404-07f6fd13d8548464.js" async=""></script><script src="js/main-app-3d01fb83949f871f.js" async=""></script><script src="js/layout-10a51fc85f061c05.js" async=""></script><script src="js/76152-4259c923cd7d1086.js" async=""></script><script src="js/error-b6c3e54736ba2ff4.js" async=""></script><script src="js/not-found-5711ccce209f98ec.js" async=""></script><script src="js/18393-d79df4bbe350c522.js" async=""></script><script src="js/page-d01903f7e4d2401d.js" async=""></script><link rel="dns-prefetch" href="https://cdn.xquiz.co"><link rel="preconnect" href="https://fonts.bunny.net" crossorigin="anonymous"><title>ROTINA DOS CHÁS BARIÁTRICOS</title><meta name="description" content="ROTINA DOS CHÁS BARIÁTRICOS"><meta name="robots" content="noindex, nofollow"><link rel="icon" href="b2d9e940-3fb9-42f8-95d2-08543f4d1e16"><script src="js/polyfills-42372ed130431b0a.js" nomodule=""></script><style>a[href*="xquiz"] { display: none !important; }</style><script>
   window.pixelId = "69babef8efd5ccc87ca0ba91";
   var a = document.createElement("script");
