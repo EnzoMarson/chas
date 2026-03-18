@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[81444],{81444:function(e,n,t){t.r(n),t.d(n,{__iconNode:function(){return o},default:function(){return c}});var u=t(23201);let o=[["path",{d:"M2 16s9-15 20-4C11 23 2 8 2 8",key:"h4oh4o"}]],c=(0,u.Z)("FishSymbol",o)}}]);

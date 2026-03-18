@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4671],{4671:function(e,t,n){n.r(t),n.d(t,{__iconNode:function(){return c},default:function(){return r}});var u=n(23201);let c=[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M3 9h18",key:"1pudct"}]],r=(0,u.Z)("PanelTop",c)}}]);

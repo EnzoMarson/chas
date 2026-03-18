@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[70022],{70022:function(e,n,u){u.r(n),u.d(n,{__iconNode:function(){return t},default:function(){return r}});var c=u(23201);let t=[["path",{d:"M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9-9-1.8-9-9 1.8-9 9-9",key:"garfkc"}]],r=(0,c.Z)("Squircle",t)}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[50141],{50141:function(e,n,u){u.r(n),u.d(n,{__iconNode:function(){return r},default:function(){return c}});var t=u(23201);let r=[["path",{d:"m18 15-6-6-6 6",key:"153udz"}]],c=(0,t.Z)("ChevronUp",r)}}]);

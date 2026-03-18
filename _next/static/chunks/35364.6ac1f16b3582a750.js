@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[35364],{35364:function(e,t,n){n.r(t),n.d(t,{__iconNode:function(){return u},default:function(){return r}});var c=n(23201);let u=[["path",{d:"M21.801 10A10 10 0 1 1 17 3.335",key:"yps3ct"}],["path",{d:"m9 11 3 3L22 4",key:"1pflzl"}]],r=(0,c.Z)("CircleCheckBig",u)}}]);

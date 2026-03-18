@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[72548],{72548:function(e,c,n){n.r(c),n.d(c,{__iconNode:function(){return u},default:function(){return l}});var t=n(23201);let u=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 14.5 16",key:"1pcbox"}]],l=(0,t.Z)("Clock5",u)}}]);

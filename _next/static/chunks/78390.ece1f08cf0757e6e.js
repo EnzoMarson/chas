@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[78390],{78390:function(e,t,n){n.r(t),n.d(t,{__iconNode:function(){return u},default:function(){return a}});var r=n(23201);let u=[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m9 8 6 4-6 4Z",key:"f1r3lt"}]],a=(0,r.Z)("SquarePlay",u)}}]);

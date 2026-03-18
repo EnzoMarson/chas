@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[59148],{59148:function(e,t,r){r.r(t),r.d(t,{__iconNode:function(){return u},default:function(){return a}});var n=r(23201);let u=[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m16 12-4-4-4 4",key:"177agl"}],["path",{d:"M12 16V8",key:"1sbj14"}]],a=(0,n.Z)("SquareArrowUp",u)}}]);

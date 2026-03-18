@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[50015],{50015:function(n,e,t){t.r(e),t.d(e,{__iconNode:function(){return o},default:function(){return c}});var u=t(23201);let o=[["polygon",{points:"6 3 20 12 6 21 6 3",key:"1oa8hb"}]],c=(0,u.Z)("Play",o)}}]);

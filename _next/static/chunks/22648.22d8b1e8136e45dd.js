@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[22648],{22648:function(e,t,n){n.r(t),n.d(t,{__iconNode:function(){return r},default:function(){return f}});var u=n(23201);let r=[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["line",{x1:"9",x2:"15",y1:"15",y2:"9",key:"1dfufj"}]],f=(0,u.Z)("SquareSlash",r)}}]);

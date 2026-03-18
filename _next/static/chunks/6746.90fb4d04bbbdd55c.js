@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6746],{6746:function(n,e,t){t.r(e),t.d(e,{__iconNode:function(){return o},default:function(){return r}});var u=t(23201);let o=[["polygon",{points:"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3",key:"1yg77f"}]],r=(0,u.Z)("Filter",o)}}]);

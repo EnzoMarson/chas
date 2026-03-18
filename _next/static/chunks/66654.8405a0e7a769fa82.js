@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[66654],{66654:function(e,t,r){r.r(t),r.d(t,{__iconNode:function(){return c},default:function(){return h}});var n=r(23201);let c=[["rect",{width:"20",height:"6",x:"2",y:"4",rx:"2",key:"qdearl"}],["rect",{width:"20",height:"6",x:"2",y:"14",rx:"2",key:"1xrn6j"}]],h=(0,n.Z)("StretchHorizontal",c)}}]);

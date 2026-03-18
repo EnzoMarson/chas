@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[10774],{10774:function(e,n,t){t.r(n),t.d(n,{__iconNode:function(){return h},default:function(){return i}});var u=t(23201);let h=[["path",{d:"M3 12h18",key:"1i2n21"}],["path",{d:"M3 18h18",key:"1h113x"}],["path",{d:"M3 6h18",key:"d0wm0j"}]],i=(0,u.Z)("AlignJustify",h)}}]);

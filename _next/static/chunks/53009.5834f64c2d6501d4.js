@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[53009],{53009:function(e,t,n){n.r(t),n.d(t,{__iconNode:function(){return h},default:function(){return r}});var u=n(23201);let h=[["path",{d:"M19 15V9",key:"1hci5f"}],["path",{d:"M15 15h-3v4l-7-7 7-7v4h3v6z",key:"16tjna"}]],r=(0,u.Z)("ArrowBigLeftDash",h)}}]);
